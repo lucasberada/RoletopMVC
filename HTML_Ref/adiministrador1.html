@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Rolê top</title>s
+        <link rel="stylesheet" type="text/css" href="css/adm1.css"/>
+        <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                   <div id="nav">
+                    <ul>
+                            <li id="bt-mobile-menu">
+                                    <!-- HTML para colocar os ícones do FA -->
+                                    <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                                        <i class="fa fa-bars"></i>
+                                    </a>
+                                </li>
+                       
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="roletop-principal.html">home</a> </li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="roletop-principal.html#galeria">galeria</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="roletop-principal.html"><img src="img/logo.png" alt="logo roletop"></a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="roletop-principal.html#regras">regras</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="clientes.html">faça seu evento</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="login.html">login</a></li>
+                        
+                    </ul>
+                
+                </div>
+                </nav>
+                <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+
+        </header>
+            
+        <main>
+            <section id="banner">
+                <img src="https://media.giphy.com/media/L06FwuS3PlEadsXuAA/giphy.gif" >
+            </section>
+
+            <section id="painel">
+       
+            <div class="box-status-pedidos aprovados">
+                    <h4>Aprovados</h4>
+                    <p>1</p>
+                </div>
+
+                <div class="box-status-pedidos pendentes">
+                        <h4>pendentes</h4>
+                        <p>20</p>
+                    </div>
+
+                    <div class="box-status-pedidos reprovados">
+                            <h4>reprovados</h4>
+                            <p>10</p>
+                        </div>
+                    </section>
+
+            <h2>CALENDARIO</h2>
+            
+          
+            <section id="calendario">
+
+                <img src="img/calendario.png" alt="calendario">
+            
+
+            <form action="adiministrador1.html">
+                <br>
+                    <label for="selecione a data">selecione a data</label>
+                    <br>
+                    <input id="date" type="date">
+
+                    <input type="submit" value="buscar" />
+                    <br>
+                </form>
+                <br>
+                </section>
+
+                
+                    <table>
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">Nome</th>
+                                    <th rowspan="2">dia</th>
+                                    <th rowspan="2">descriçao do evento</th>
+                                    <th rowspan="2">cpf</th>
+                                    <th rowspan="2">email</th>
+                                    <th rowspan="2">luz e som</th>
+                                    <th rowspam="2">confirmar</th>
+                                </tr>
+                                
+                                    
+                                    
+                            
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="6">
+                                        <p>agendamento feito as 04/09/2019 às 7:41</p>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                <tr>
+                                    <td>lucas santos</td>
+                                    <td>01/09/2019</td>
+                                    <td>casamento da maria com o joao</td>
+                                    <td>52041722894</td>
+                                    <td>lucasbr.santoscosta@gmail.com</td>
+                                    <td>luz</td>
+                                    <td><a href="#"><i class="fas fa-check-circle"></i><br>
+                                        <i class="fas fa-ban"></i>
+
+                                    </a></td>
+                                    
+                                    
+                                </tr>
+                              
+                            </tbody>
+                            
+                        </table>
+           
+        </main>
+                
+                
+                
+        <footer> 
+            <br>
+            <section>
+                <div class="section-container">
+                         <P><adress>alameda barao de Limeira</adress></P>
+                         <p>campos eliseos são paulo</p>
+                         <p>cep:01202-000</p>
+                 </div>
+           </section>
+    </footer>
+
+    <script>
+            function toggleMobileMenu() {
+                var ul = document.querySelector("nav ul");
+                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                var icon = document.querySelector(".icon > i");
+    
+                ul.classList.toggle("mobile-mode");
+    
+                if (icon.classList.contains("fa-bars")) {
+                    icon.classList.remove("fa-bars");
+                    icon.classList.remove("fa");
+    
+                    icon.classList.add("fas");
+                    icon.classList.add("fa-skull");
+                } else {
+                    icon.classList.remove("fas");
+                    icon.classList.remove("fa-skull");
+    
+                    icon.classList.add("fa");
+                    icon.classList.add("fa-bars");
+                }
+    
+                for (var button of commonButtons) {
+                    button.classList.toggle("active");
+                }
+    
+            }
+    
+        </script>
+           
+    </body>

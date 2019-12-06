@@ -1,0 +1,51 @@
+  <main>
+        <form method="POST" action='@Url.Action("CadastrarCliente", "Cadastro")'>
+
+            <section id="login">
+                <br>
+                <h2>cadastre-se</h2>
+
+             <div id="caixa">
+            
+                    <form method="GET" action='@Url.Action("CadastrarCliente", "Cadastro")'>
+
+                            <div>
+                                <label for="nome">nome completo</label>
+                                <br >
+                                <input id="name" type="name" name="nome" />
+                            </div>
+                
+                            <div>
+                                <label for="email">E-mail</label>
+                                <br >
+                                <input id="email" type="email" name="email"/>
+                            </div>
+                            
+                                <label for="age" >idade</label>
+                                <br>  
+                                <input id="idade"  type="date" name="idade">  
+                                <br>   
+
+                                <label for="CPF">CPF</label>
+                                <br>  
+                                <input id="cpf"  type="CPF" name="cpf">  
+                                <br> 
+
+                                <label for="RG">RG</label>
+                                <br>  
+                                <input id="rg"  type="RG" name="rg">
+                                <br>  
+
+                                <div>
+                                        <label for="senha">Senha</label>
+                                        <br >
+                                        <input id="senha" type="password" name="senha">
+                                    </div>
+                            
+                                <input type="submit" value="cadastrar" />
+
+                        </form>
+                    </div>
+                        <br>
+            </form>
+        </main>

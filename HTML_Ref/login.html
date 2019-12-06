@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Rolê top</title>
+        <link rel="stylesheet" type="text/css" href="css/login.css" />
+        <link href="img/logo.png" rel="icon" type="image/x-icon" />
+        <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+    </head>
+
+    <body>
+            <header>
+                    <nav>
+                        <div id="nav">
+                            <ul>
+                                <li id="bt-mobile-menu">
+                                    <!-- HTML para colocar os ícones do FA -->
+                                    <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                                        <i class="fa fa-bars"></i>
+                                    </a>
+                                </li>
+                                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index.html">HOME</a>
+                                </li>
+                                <li class="bt-common-menu"><a onclick="toggleMobileMenu()"
+                                        href="index.html#galeria">GALERIA</a></li>
+                                
+                                <li class="bt-common-menu"><a onclick="toggleMobileMenu()"
+                                        href="index.html#regras">REGRAS</a></li>
+                                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="clientes.html">FAÇA SEU EVENTO</a>
+                                </li>
+                                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="login.html">LOGIN</a></li>
+            
+                            </ul>
+                        </div>
+                        <section id="banner">
+                            <img src="img/logo.png">
+                        </section>
+                    </nav>
+                </header>
+
+
+            
+        <main>
+                
+
+            <section id="login">
+                <br>
+             <div id="caixa">
+            
+                    <form method="GET" action="login.html">
+
+                            <div>
+                                <label for="email">E-mail</label>
+                                <br >
+                                <input id="email" type="email" />
+                            </div>
+                
+                            <div>
+                                <label for="senha">Senha</label>
+                                <br >
+                                <input id="senha" type="password" />
+                            </div>
+                
+                                <input type="submit" value="login" />
+                        </form>
+                        <br>
+                        <br>
+
+                        <ul>
+                                <li>
+                                   <a href="cadastre-se.html" >não tem cadastro?</a> 
+                                   <br>
+                                   <br><br>
+                                   
+                                   <a href="">esqueceu a senha?</a>
+        
+                                </li>
+                            </ul>
+        
+                    </div>
+                    <br>
+                </section>
+                       
+                    
+                    
+        </main>
+                
+                
+        <footer> 
+            <section>
+                <div class="section-container">
+                         <P><adress>alameda barao de Limeira</adress></P>
+                         <p>campos eliseos são paulo</p>
+                         <p>cep:01202-000</p>
+                 </div>
+           </section>
+    </footer>
+           
+    <script>
+            function toggleMobileMenu() {
+                var ul = document.querySelector("nav ul");
+                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                var icon = document.querySelector(".icon > i");
+    
+                ul.classList.toggle("mobile-mode");
+    
+                if (icon.classList.contains("fa-bars")) {
+                    icon.classList.remove("fa-bars");
+                    icon.classList.remove("fa");
+    
+                    icon.classList.add("fas");
+                    icon.classList.add("fa-skull");
+                } else {
+                    icon.classList.remove("fas");
+                    icon.classList.remove("fa-skull");
+    
+                    icon.classList.add("fa");
+                    icon.classList.add("fa-bars");
+                }
+    
+                for (var button of commonButtons) {
+                    button.classList.toggle("active");
+                }
+    
+            }
+    
+        </script>
+    </body>
+

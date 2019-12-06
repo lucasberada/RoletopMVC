@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+nav #bt-mobile-menu {
+    display: none;
+}
+
+ h3, h4, h5, h6 {
+    background-color: #9162e4;
+    
+}
+
+h2 {
+    background-color: none;
+    font-family: 'Lobster', cursive;
+    text-shadow: 
+    -1px -1px 0 #9162e4,
+    1px -1px 0 #9162e4,
+   -1px  1px 0 #9162e4,
+    1px  1px 0 #9162e4;
+    text-align: center;
+}
+nav a:hover {
+    background-color: white;
+    text-decoration: none;
+  }
+
+
+nav{
+    background-image:url(../img/AAwyE21.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 1em;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav li {
+    text-decoration: none;
+    font-weight: bold;
+    padding: .65em 1.3em;
+    align-items: center;
+}
+
+
+nav ul > li >a > img {
+    width: 200px;
+}
+
+
+    
+
+
+
+#banner img {
+    width: 300px;
+    margin: 20px;
+
+}
+
+
+#login {
+    background-color: #B3F2F2;
+}
+
+#caixa  {
+        
+        border: 1px solid #000000;
+        border: #000000 solid .10em;
+        width: 900px;
+        height: 500px;
+        display: flex;
+        margin: 0 auto;
+         background-image: url(../roletop/img/logo.png) ;
+        background-size: 10em;
+        background-repeat: no-repeat;       
+        border-radius: 5%; 
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+}
+
+#caixa form  {
+    width: 100em;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2px;
+    text-align: center;
+}
+
+#caixa form>label{
+    text-align: center;
+}  
+
+
+footer {
+   background-color: #B3F2F2;
+}
+
+#br {
+    background-color: #B3F2F2;
+}
+
+#name {
+    width: 50em;
+    border: 1px solid #000000;
+    border: #000000 solid .10em;
+    border-radius: 5%; 
+}
+
+#email {
+    width: 50em;
+    border: 1px solid #000000;
+    border: #000000 solid .10em;
+    border-radius: 5%; 
+}
+
+@media (max-width: 980px) {
+    
+    #banner img{
+        width:  500px;
+        height: 200px;
+    }
+
+
+
+    #caixa {
+       width:  500px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 920px) {
+
+      #nav >ul >li {
+        font-size: 20px;
+
+      }
+}
+
+@media (max-width:810px) {
+    #nav >ul >li {
+        font-size: 15px;
+    }
+}
+
+
+
+@media (max-width: 625px) {
+    
+
+    nav #bt-mobile-menu {
+        display: block;
+    }
+
+    nav .bt-common-menu {
+        display: none;
+    }
+
+    nav .bt-common-menu.active {
+        display: block;
+    }
+
+    nav ul.mobile-mode {
+        display: flex;
+        flex-direction: column;
+    }
+    #nav {
+        position: absolute;
+        background-color: #ffc600;
+    }
+}

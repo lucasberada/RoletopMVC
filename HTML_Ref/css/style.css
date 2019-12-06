@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+nav #bt-mobile-menu {
+    display: none;
+}
+
+ h3, h4, h5, h6 {
+    background-color: #9162e4;
+    
+}
+
+h2 {
+    background-color: none;
+    font-family: 'Lobster', cursive;
+    text-shadow: 
+    -1px -1px 0 #9162e4,
+    1px -1px 0 #9162e4,
+   -1px  1px 0 #9162e4,
+    1px  1px 0 #9162e4;
+    text-align: center;
+}
+nav a:hover {
+    background-color: white;
+    text-decoration: none;
+  }
+
+
+nav{
+    background-image: url(../img/nav-bak.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 1em;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav li {
+    text-decoration: none;
+    font-weight: bold;
+    padding: .65em 1.3em;
+    align-items: center;
+}
+
+
+nav ul > li >a > img {
+    width: 200px;
+}
+
+
+    
+
+
+
+#banner img {
+    width: 300px;
+    margin: 20px;
+
+}
+
+#donos {
+    background-color: #B3F2F2;
+}
+
+#prof h2{
+    
+}
+
+#prof {
+    display: flex;
+    justify-content: center;
+    
+}  
+
+
+
+#prof1  img {
+    height: 400px;
+    width: 250px;
+}
+
+#prof2 >img {
+    height: 300px;
+    width: 400px;
+    margin-top: 3em;
+
+}
+
+#prof1 p {
+    text-align: center;
+    margin-top: -6em;
+}
+
+#prof2 p {
+    text-align: center;
+    margin-top: -3em;
+}
+
+#prof1 {
+    border: 1px ;
+    border: .10em;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color:#6FD6D6;
+    border-radius: 5%; 
+  
+}
+
+
+#prof2 {
+    border: 1px ;
+    border: .10em;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color:#6FD6D6;
+    border-radius: 5%; 
+
+    
+
+}
+
+
+#galeria {
+    max-height: 20%;
+    background-color: #B3F2F2;
+}
+
+#galeria >img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+#caixa  {
+    
+        border: 1px ;
+        border: .10em;
+        width: 900px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        background-color:#B3F2F2;
+        border-radius: 5%; 
+}
+
+#fotos img{
+    width:15em;
+    height:12em;
+}
+
+#fotos2 img {
+    width:15em;
+    height:12em;
+}
+
+
+#regras {
+    background-color:#B3F2F2;
+}
+
+#regras > p {
+    list-style: decimal;
+}
+
+footer {
+    background-image: linear-gradient( #9162e4,#5e35b1);
+}
+@media (max-width: 980px) {
+    
+    #banner img{
+        width:  500px;
+        height: 200px;
+    }
+
+
+
+    #caixa {
+       width:  500px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 920px) {
+
+      #nav >ul >li {
+        font-size: 20px;
+
+      }
+}
+
+@media (max-width:810px) {
+    #nav >ul >li {
+        font-size: 15px;
+    }
+}
+
+
+
+@media (max-width: 625px) {
+    
+
+    nav #bt-mobile-menu {
+        display: block;
+    }
+
+    nav .bt-common-menu {
+        display: none;
+    }
+
+    nav .bt-common-menu.active {
+        display: block;
+    }
+
+    nav ul.mobile-mode {
+        display: flex;
+        flex-direction: column;
+    }
+    #nav {
+        position: absolute;
+        background-color: #ffc600;
+    }
+}
+
+@media (max-width: 520px) {
+    #banner img{
+        width:  300px;
+        height: 200px;
+    }
+
+    #caixa {
+        width:  200px;
+         height: 200px;
+     }
+
+     
+    #fotos img{
+        width:5em;
+        height:5em;
+  
+      }
+  
+      #fotos2 img{
+          width:5em;
+          height:4em;
+    
+
+}
+
+@media (max-width: 400px) {
+    #caixa {
+        width:  200px;
+         height: 200px;
+     }
+
+     #banner img{
+        width:  300px;
+        height: 100px;
+    }
+
+    #fotos img{
+      width:5em;
+      height:5em;
+
+    }
+
+    #fotos2 img {
+        width:5em;
+        height:4em;
+    }
+  
+}
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Rolê top</title>
+        <link rel="stylesheet" type="text/css" href="css/clientes.css"/>
+        <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+
+    </head>
+    <body>
+            <header>
+                    <nav>
+                        <div id="nav">
+                            <ul>
+                                <li id="bt-mobile-menu">
+                                    <!-- HTML para colocar os ícones do FA -->
+                                    <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                                        <i class="fa fa-bars"></i>
+                                    </a>
+                                </li>
+                                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index.html">HOME</a>
+                                </li>
+                                <li class="bt-common-menu"><a onclick="toggleMobileMenu()"
+                                        href="index.html#galeria">GALERIA</a></li>
+                                
+                                <li class="bt-common-menu"><a onclick="toggleMobileMenu()"
+                                        href="index.html#regras">REGRAS</a></li>
+                                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="clientes.html">FAÇA SEU EVENTO</a>
+                                </li>
+                                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="login.html">LOGIN</a></li>
+            
+                            </ul>
+                        </div>
+                        <section id="banner">
+                            <img src="img/logo.png">
+                        </section>
+                    </nav>
+                </header>
+            
+        <main>
+               
+
+                <section id="login">
+                        <br>
+                     <div id="caixa">
+
+                <form action="clientes.html">
+
+                <label for="selecione a data">selecione a data</label>
+                <br>
+                <input id="date" type="date">
+                <br>
+                <br>
+                <label for="descreva seu evento">descreva seu evento</label>
+                <br>
+                <input id="descreva" type="text">
+                <br>
+                <br>
+                <label for="forma de pagamento">forma de pagamento</label>
+<br>
+                <select id="opição">
+
+                        <option value="" disabled="" selected="">Selecione</option>
+                        <option>debito</option>
+                        <option>credito</option>
+                        <option>boleto</option>
+                </select>
+
+                <br>
+                <br>
+
+                <label for="alguma pergunta">alguma pergunta?</label>
+                <br>
+                <input id="descreva" type="text">
+                <br>
+                <br>
+                <label for="luz e som">precisa de ajuda com luz e som?</label>
+                <br>
+
+                <select id="opição">
+                        <option value="" disabled="" selected="">Selecione</option>
+                        <option>luz</option>
+                        <option>som</option>
+                        <option>os dois</option>
+                        
+                        <input type="submit" value="enviar" />
+
+                    </form>
+
+                </select>
+
+            </div>
+
+        </section>
+  
+        </main>
+                
+                
+                
+        <footer> 
+                <section>
+                    <div class="section-container">
+                             <P><adress>alameda barao de Limeira</adress></P>
+                             <p>campos eliseos são paulo</p>
+                             <p>cep:01202-000</p>
+                     </div>
+               </section>
+        </footer>
+
+        <script>
+                function toggleMobileMenu() {
+                    var ul = document.querySelector("nav ul");
+                    var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                    var icon = document.querySelector(".icon > i");
+        
+                    ul.classList.toggle("mobile-mode");
+        
+                    if (icon.classList.contains("fa-bars")) {
+                        icon.classList.remove("fa-bars");
+                        icon.classList.remove("fa");
+        
+                        icon.classList.add("fas");
+                        icon.classList.add("fa-skull");
+                    } else {
+                        icon.classList.remove("fas");
+                        icon.classList.remove("fa-skull");
+        
+                        icon.classList.add("fa");
+                        icon.classList.add("fa-bars");
+                    }
+        
+                    for (var button of commonButtons) {
+                        button.classList.toggle("active");
+                    }
+        
+                }
+        
+            </script>
+           
+    </body>
+
